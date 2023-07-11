@@ -1,0 +1,84 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  /* position: relative;   */
+}
+
+.hero-about {
+  height: 70vh;
+  width: 100%;
+}
+
+.hero-about h1 {
+  padding-top: 4rem !important;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-content {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%);
+}
+
+.main-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  background-color: whitesmoke;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-content p {
+  font-size: 1.3rem;
+  color: white;
+  font-family: cursive;
+  padding: 0.5rem 0 2rem 0;
+}
+
+.main-content .show {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: 0.3s ease-in-out;
+}
+
+.main-content .show:hover {
+  text-decoration: none;
+  background-color: cadetblue;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.main-content .hide {
+  display: none;
+}
+
+@media screen and (max-width: 555px) {
+  .main-content h1 {
+    padding: 10px 20px;
+  }
+  .main-content p {
+    font-size: 1.1rem;
+    padding: 0 0 2rem 0;
+  }
+  .main-content .show {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+}
