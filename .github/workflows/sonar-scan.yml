@@ -31,7 +31,8 @@ jobs:
           sonar-scanner \
             -Dsonar.projectKey=BhanuPrakash0710_PackYourBags\
             -Dsonar.organization=bhanuprakash0710 \
-            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+            -Dsonar.tags= vroom \
+            -Dsonar.login=${{ secrets.SONAR_TOKEN }} 
 
       - name: Upload SonarCloud results (if using npm scripts)
         run: npm run sonar
