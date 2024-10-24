@@ -29,8 +29,8 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           sonar-scanner \
-            -Dsonar.projectKey=my-project-key \
-            -Dsonar.organization=my-org \
+            -Dsonar.projectKey=BhanuPrakash0710_PackYourBags\
+            -Dsonar.organization=bhanuprakash0710 \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
       - name: Upload SonarCloud results (if using npm scripts)
