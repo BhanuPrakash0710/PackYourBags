@@ -14,6 +14,8 @@ export default function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Service" element={<Service />} />
+        <Route path="/Bonda" element={<Bonda />} />
+        <Route path="/Honda" element={<Honda />} />
       </Routes>
     </div>
   );
